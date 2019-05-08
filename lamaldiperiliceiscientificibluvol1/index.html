@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Soluciones L'Amaldi</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="./index.html">Soluciones Volta</a>
+        </nav>
+    </header>
+    
+    <section id="toc" class="container">
+        <div class="toc-header row align-items-center">
+            <div class="col-md-3 text-center">
+                <img class="bookCoverThumbnail" src="../images/coverVol1.jpg" alt="Cover L'Amaldi per i licei scientifici.blu" width="100%">
+            </div>                
+            <div class="col-md-9 text-center">
+                <h2>L'Amaldi per i licei scientifici.blu Vol.1</h2>
+                <p>ISBN: 9788808721204</p>
+                <a href="https://www.zanichelli.it/ricerca/prodotti/l-amaldi-per-i-licei-scientifici-blu-amaldi"><img src="../images/zanichelli.PNG" alt="Comprar en Zanichelli"></a>
+            </div>
+        </div>
+        <!--In this place the chapter names are added via javascript-->        
+    </section>
+    <script>
+        let chapterNamesVol1 =
+        ["Richiami sui moti e le forze",
+        "I vettori",
+        "I princìpi della dinamica e la relatività Galileana",
+        "Applicazioni dei princìpi della dinamica",
+        "Il lavoro e l'energia",
+        "La quantità di moto e il momento angolare",
+        "La gravitazione",
+        "La meccanica dei fluidi",
+        "La temperatura",
+        "Il modello microscopico della materia",
+        "Il calore e i cambiamenti di stato",
+        "Il primo principio della termodinamica",
+        "Il secondo principio della termodinamica",
+        "Entropia e disordine"
+        ];
+        let content = document.getElementById("toc").innerHTML;
+        for (let i = 0; i < chapterNamesVol1.length; i++){
+                content += `<a href="./capitulo${i}/index.html"><div class="row toc-item"><div class="col-12"><h5>Capitolo ${i}</h5>${chapterNamesVol1[i]}</div></div></a>`;
+        }
+        document.getElementById("toc").innerHTML = content;
+
+        
+    </script>
+    
+</body>
+</html>

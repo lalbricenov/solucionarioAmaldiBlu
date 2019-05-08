@@ -1,0 +1,43 @@
+
+.procedimiento{
+    display: none;
+}
+.toggleProcedimiento{
+    text-align: center;
+}
+nav{
+    margin-bottom: 20px;
+    background-color: rgb(0, 204, 0);
+}
+.bookCoverThumbnail{
+    max-width: 200px;
+}
+.toc-header{
+    margin-bottom: 20px;
+}
+
+.container a{
+    color:black;
+}
+.container a:hover{
+    text-decoration: none;
+}
+.toc-item{
+    border:solid 2px lightgray;
+    border-radius:5px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align:center;
+}
+.toc-item:hover{
+    background-color:lightgray;
+}
+
+.galleryImage img{
+    max-width: 180px;
+    padding:5px;
+}
+.container-fluid{
+    max-width: 1500px;
+}

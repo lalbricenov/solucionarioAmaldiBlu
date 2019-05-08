@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles.css">
+    <title>Problema generali 1</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Capítulo 14 <br> </h1>
+            <h2>Problemi generali 1</h2> 
+        </div>
+        <div class="row ">
+            <div class="col-lg-6">
+                    
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse molestie purus eget metus elementum facilisis. Pellentesque fringilla, tortor vitae venenatis interdum, dolor dolor ultrices turpis, porttitor laoreet lorem mi quis sapien. Cras vitae scelerisque lacus. Integer non sagittis justo. Maecenas congue lacinia ultrices. Cras nisl libero, suscipit congue ultrices interdum, vehicula at nunc. Proin a justo pellentesque erat bibendum porttitor.</p>
+                    <img src="./problema.gif" alt="Enunciado problema" width="100%" max-width="500px">
+                    
+                    <h4>Respuesta</h4>
+                    <p>25</p>
+
+            </div>
+            <div class="col-lg-6">
+                <div class="toggleProcedimiento">
+                    <h2 onclick="toggleElement('procedCH14PG1')">Procedimiento</h2>
+                </div>                
+                <div class="procedimiento rounded-sm" id="procedCH14PG1" >
+                    <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse molestie purus eget metus elementum facilisis. Pellentesque fringilla, tortor vitae venenatis interdum, dolor dolor ultrices turpis, porttitor laoreet lorem mi quis sapien. Cras vitae scelerisque lacus. Integer non sagittis justo. Maecenas congue lacinia ultrices. Cras nisl libero, suscipit congue ultrices interdum, vehicula at nunc. Proin a justo pellentesque erat bibendum porttitor.</p>
+                    <img src="./coulomb.jpg" alt="Coulomb">
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleElement(id){
+            let state = document.getElementById(id).style.display;
+            if (state == "none" || state ==""){
+                document.getElementById(id).style.display = "block";
+            }else{
+                document.getElementById(id).style.display = "none";
+            }
+            
+        }
+    </script>
+</body>
+</html>
